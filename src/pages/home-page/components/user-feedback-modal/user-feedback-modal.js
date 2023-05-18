@@ -32,7 +32,7 @@ export const UserFeedbackModal = () => {
     color: "var(--on-background-color)",
     showCloseButton: true,
     allowEnterKey: false,
-    closeButtonHtml: '<img src="/assets/icons/close-icon.svg" alt="X" />',
+    closeButtonHtml: '<img src="/close-icon.svg" alt="X" />',
     didClose: () => {
       localStorage.setItem("userFeedbackModalClosedTimestamp", Date.now());
     },
