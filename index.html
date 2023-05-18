@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NX/Feedback</title>
+  </head>
+
+  <body>
+    <div id="home-page">
+      <template id="user-feedback-modal">
+        <swal-html>
+          <div class="user-feedback-component">
+            <div class="user-feedback-component__header">
+              <div
+                class="user-feedback-component__icon-container img-container"
+              >
+                <img src="/assets/icons/user-feedback-icon.svg" alt="icon" />
+              </div>
+              <div class="user-feedback-component__title">
+                How do you feel about using our product?
+              </div>
+            </div>
+            <div class="user-feedback-component__rating-container">
+              <div class="user-feedback-component__rates-container">
+                <div
+                  class="user-feedback-component__single-rate-tile"
+                  data-rate="1"
+                >
+                  1
+                </div>
+                <div
+                  class="user-feedback-component__single-rate-tile"
+                  data-rate="2"
+                >
+                  2
+                </div>
+                <div
+                  class="user-feedback-component__single-rate-tile"
+                  data-rate="3"
+                >
+                  3
+                </div>
+                <div
+                  class="user-feedback-component__single-rate-tile"
+                  data-rate="4"
+                >
+                  4
+                </div>
+                <div
+                  class="user-feedback-component__single-rate-tile"
+                  data-rate="5"
+                >
+                  5
+                </div>
+              </div>
+              <div class="user-feedback-component__labels-container">
+                <div class="user-feedback-component__single-label">
+                  Extremly dissatisfied
+                </div>
+                <div
+                  class="user-feedback-component__single-label user-feedback-component__single-label--to-right"
+                >
+                  Extremly satisfied
+                </div>
+              </div>
+            </div>
+            <button
+              data-loader="0"
+              type="button"
+              class="user-feedback-component__confirm-button btn-primary"
+              disabled
+            >
+              <div class="btn-primary__text">Next step</div>
+              <div class="btn-primary__loader">
+                <img src="/assets/icons/animated-loader.svg" alt="Loading..." />
+              </div>
+            </button>
+          </div>
+        </swal-html>
+      </template>
+    </div>
+
+    <script type="module" src="/src/global-scripts/main.js"></script>
+    <script type="module" src="/src/pages/home-page/home-page.js"></script>
+  </body>
+</html>

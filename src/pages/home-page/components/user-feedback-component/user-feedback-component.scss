@@ -1,0 +1,150 @@
+.user-feedback-component {
+  background-color: var(--background-color);
+  padding: 32px;
+  border-radius: 24px;
+  max-width: 496px;
+  width: 100%;
+  max-height: 414px;
+
+  & &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-bottom: 32px;
+  }
+
+  & &__title {
+    max-width: 265px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.03em;
+    text-align: left;
+  }
+
+  & &__rating-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  & &__rates-container {
+    display: flex;
+    gap: 8px;
+  }
+
+  & &__single-rate-tile {
+    max-width: 80px;
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--color-white-900);
+    border-radius: 16px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+
+    &[data-selected] {
+      background-color: var(--background-color-primary-hover);
+      border: 1px solid var(--primary-color);
+    }
+
+    &:hover {
+      cursor: pointer;
+      background-color: var(--background-color-primary-hover);
+      border: 1px solid var(--primary-color);
+    }
+  }
+
+  & &__labels-container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 32px;
+  }
+
+  & &__single-label {
+    max-width: 90px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: -0.01em;
+    color: var(--color-black-200);
+    text-align: left;
+  }
+
+  & &__single-label--to-right {
+    text-align: right;
+  }
+
+  & &__confirm-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.2s;
+    background-color: var(--primary-color);
+    color: var(--color-white-100);
+    border: none;
+    width: 100%;
+    height: 56px;
+    border-radius: 60px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+  }
+
+  @media (max-width: 510px) {
+    padding: 16px 16px 24px;
+    border-radius: 18px;
+
+    & &__header {
+      gap: 12px;
+      padding-bottom: 24px;
+      font-family: Space Grotesk;
+    }
+
+    & &__icon-container {
+      max-width: 40px;
+    }
+
+    & &__title {
+      max-width: 200px;
+      font-size: 18px;
+      line-height: 18px;
+    }
+
+    & &__rating-container {
+        gap: 12px;
+    }
+    & &__rates-container {
+      justify-content: space-around;
+    }
+
+    & &__single-rate-tile {
+      max-width: 56px;
+      font-size: 18px;
+      line-height: 18px;
+      padding: 15px 0;
+      border-radius: 12px;
+    }
+
+    & &__labels-container {
+      padding-bottom: 24px;
+    }
+
+    & &__single-label {
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    & &__confirm-button {
+      max-height: 48px;
+      font-size: 14px;
+      line-height: 14px;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.user-feedback-modal {
+  .swal2-html-container {
+    margin: 0;
+  }
+
+  .swal2-popup {
+    border-radius: 28px;
+  }
+
+  .swal2-close {
+    --close-button-size: 15px;
+
+    width: var(--close-button-size);
+    height: var(--close-button-size);
+    margin-top: 28px;
+    margin-right: 28px;
+  }
+
+  @media (max-width: 510px) {
+    .swal2-container {
+        margin: 5px;
+      }
+
+      .swal2-close {
+        margin-top: 22px;
+        margin-right: 22px;
+      }
+  }
+}

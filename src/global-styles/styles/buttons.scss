@@ -1,0 +1,37 @@
+button {
+  &.btn-primary {
+    --loader-size: 40px;
+    &[disabled] {
+      background-color: var(--background-color-disabled);
+      color: var(--on-background-color-disabled);
+
+      &:hover {
+        cursor: not-allowed;
+        background-color: var(--background-color-disabled);
+      }
+    }
+
+    .btn-primary__loader {
+      max-width: var(--loader-size);
+      max-height: var(--loader-size);
+    }
+
+    &[data-loader="0"] {
+      .btn-primary__loader {
+        display: none;
+      }
+      .btn-primary__text {
+        display: block;
+      }
+    }
+
+    &[data-loader="1"] {
+      .btn-primary__loader {
+        display: block;
+      }
+      .btn-primary__text {
+        display: none;
+      }
+    }
+  }
+}
