@@ -1,3 +1,5 @@
+<img src = "C:\Users\Lukas\Desktop\SomeCoding\Invo Academy\Nfx path\5lvl\demo.gif">
+
 # INVO Academy JS Starter with Vite
 
 In order to see this file in preview mode in VS Code, press ```Ctrl + Shift + V```
