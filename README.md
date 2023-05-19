@@ -1,4 +1,4 @@
-<img src = "C:\Users\Lukas\Desktop\SomeCoding\Invo Academy\Nfx path\5lvl\demo.gif">
+<img src = "\demo.gif">
 
 # INVO Academy JS Starter with Vite
 
