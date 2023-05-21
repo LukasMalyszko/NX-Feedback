@@ -1,10 +1,5 @@
-// import loader from "/assets/icons/animated-loader.svg";
-// import icon from "/assets/icons/user-feedback-icon.svg";
-// import { UserFeedbackModal } from "../user-feedback-modal/user-feedback-modal";
 
 export const UserFeedbackComponent = () => {
-// document.querySelector(".user-feedback-component__icon-container-img").src = icon;
-// document.querySelector(".btn-primary__loader-img").src = loader;
 
   let isLoading = false;
 
@@ -42,11 +37,6 @@ export const UserFeedbackComponent = () => {
       }
     });
   }
-
-//   function afterRatingChanged(singleRateTile) {
-//     disselectOtherRatings(singleRateTile);
-//     setProperButtonState(currentRating);
-//   }
 
   const confirmButton = document.querySelector(".btn-primary");
 

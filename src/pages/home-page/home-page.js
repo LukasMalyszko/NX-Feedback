@@ -8,7 +8,7 @@ import { UserFeedbackModal } from "./components/user-feedback-modal/user-feedbac
 import { UserFeedbackComponent } from "./components/user-feedback-component/user-feedback-component";
 
 
-UserFeedbackModal();
 setTimeout(() => {
+    UserFeedbackModal();
     UserFeedbackComponent();
- }, 1000);
+ }, 1500);

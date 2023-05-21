@@ -46,6 +46,7 @@
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0em;
+    transition: .2s;
 
     &[data-selected] {
       background-color: var(--background-color-primary-hover);
